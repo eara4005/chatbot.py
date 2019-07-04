@@ -14,12 +14,12 @@ import pyperclip
 
 
 #APIの取得
-apikey = "DZZrC3hgtnRoaBMq4isx2QiHcZ9r7xez"
+apikey = "YOUR API KEY"
 client = pya3rt.TalkClient(apikey)
 
 #天気情報を取得
 weatherUrl = 'http://weather.livedoor.com/forecast/webservice/json/v1'
-payload = {'city':'050020'}
+payload = {'city':'YOUR CITY NUMBERS'}
 data = requests.get(weatherUrl,params=payload).json()
 
 #音声認識に必要なオブジェクトを生成
@@ -172,5 +172,3 @@ Button1.pack(anchor="ne",side="right")
 
 
 root.mainloop()
-
-
